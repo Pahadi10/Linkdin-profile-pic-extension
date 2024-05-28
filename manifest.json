@@ -15,12 +15,7 @@
       }
     ],
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "images/default-profile-pic.jpg",
-        "48": "images/default-profile-pic.jpg",
-        "128": "images/default-profile-pic.jpg"
-      }
+      "default_popup": "popup.html"
     },
     "web_accessible_resources": [
       {
