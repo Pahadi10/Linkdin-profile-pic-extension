@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Profile Picture Modifier",
+    "version": "1.0",
+    "description": "This extension changes the profile pictures on LinkedIn posts to a user-uploaded image.",
+    "permissions": [
+      "activeTab",
+      "declarativeContent",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.linkedin.com/feed/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/default-profile-pic.jpg",
+        "48": "images/default-profile-pic.jpg",
+        "128": "images/default-profile-pic.jpg"
+      }
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["images/default-profile-pic.jpg"],
+        "matches": ["https://www.linkedin.com/*"]
+      }
+    ]
+  }
+  
